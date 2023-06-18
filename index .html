@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPS</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="card">
+        <div class="head-">
+          <h1 class="head">Rock | Paper | Scissors</h1>
+        </div>
+        <div class="btn">
+          <div class="turn">
+            <p id="turn"></p>
+          </div>
+          <div class="btn-all">
+            
+            <button
+              class="btnR button-28"
+              role="button"
+              id="R"
+              onclick="whoWin('r') "
+              onchange="time()"
+            >
+              ROCK
+            </button>
+            <button
+              class="btnP button-28"
+              role="button"
+              id="P"
+              onclick="whoWin('p') "
+              onchange="time()"
+            >
+              PAPER
+            </button>
+            <button
+              class="btnS button-28"
+              role="button"
+              id="S"
+              onclick="whoWin('s') "
+              onchange="time()"
+            >
+              SCISSORS
+            </button>
+          </div>
+        </div>
+
+        <div class="upoint">
+          <p class = "point" id="upoint">U = 0</p>
+          <p class = "point" id="cpoint">C = 0</p>
+          <p class = "point" id="draw">Draw = 0</p>
+          <p class = "point" id="tot">Total =</p>
+        </div>
+      </div>
+    </div>
+    <div class="card1  " id="card1">
+      <span class="icon ">
+        <ion-icon name="close-outline" id="icon"></ion-icon>
+      </span>
+      <p class="text" id="text">Your win the match</p>
+      <div class="user">
+        <p class="user-id" id="userp">U</p>
+        <p class="user-id" id="comp">C</p>
+        <p class="user-id" id="Total">Total</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
